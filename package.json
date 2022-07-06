@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/PinkMoon25/webpack/issues"
   },
-  "homepage": "https://github.com/PinkMoon25/webpack#readme",
+  "homepage": "https://pinkmoon25.github.io/To-Do-list/",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
