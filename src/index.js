@@ -69,15 +69,14 @@ listInput.addEventListener('keypress', (e) => {
     addBtn.click();
   }
   else return;
-})
+});
 
 refresh.addEventListener('click', () => {
   getTask();
   createTaskList();
-})
+});
 
 document.addEventListener("DOMContentLoaded", ()=> {
   getTask();
   createTaskList();
-})
-
+});

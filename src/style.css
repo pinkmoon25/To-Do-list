@@ -33,7 +33,7 @@ button {
   transition: all 0.3s ease;
 }
 
-main > label {
+main > div {
   width: 100%;
   padding: 8px 5px;
   display: flex;
