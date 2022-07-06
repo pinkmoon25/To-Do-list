@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -21,22 +23,69 @@ header {
   border: 1px solid rebeccapurple;
 }
 
+header > button {
+  padding: 5px 10px;
+}
+
 button {
   border: none;
   background-color: inherit;
+  transition: all 0.3s ease;
+}
+
+main > label {
+  width: 100%;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rebeccapurple;
+  opacity: 0.7;
 }
 
 input[name=listInput] {
-  padding: 12px 10px;
-  border: 1px solid rebeccapurple;
+  width: 100%;
+  padding: 5px 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
 }
 
-input[type=checkbox] {
+.addtask {
   margin-right: 8px;
+  padding: 5px 8px;
+  background-color: rebeccapurple;
+  border-radius: 2px;
+  color: #fff;
+}
+
+li > button {
+  display: flex;
+  gap: 8px;
+}
+
+button > i {
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+}
+
+button > i:hover {
+  transform: scale(1.2);
 }
 
 ul {
   list-style-type: none;
+}
+
+li > div {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+div > p {
+  width: 100%;
+  padding: 2px;
 }
 
 li {
@@ -52,4 +101,10 @@ li {
   padding: 12px 10px;
   text-align: center;
   border: 1px solid rebeccapurple;
+  font-size: 1em;
+  pointer-events: none;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
