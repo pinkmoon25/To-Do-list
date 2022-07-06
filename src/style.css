@@ -26,7 +26,7 @@ button {
   background-color: inherit;
 }
 
-input[type=text] {
+input[name=listInput] {
   padding: 12px 10px;
   border: 1px solid rebeccapurple;
 }
