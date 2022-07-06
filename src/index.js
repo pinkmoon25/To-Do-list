@@ -1,5 +1,7 @@
 import './style.css';
-import { taskArr, addTask, removeTask, storeTask, getTask } from "./task.js";
+import {
+  taskArr, addTask, removeTask, storeTask, getTask,
+} from './task.js';
 
 const list = document.querySelector('.task');
 const listInput = document.querySelector('#listInput');
@@ -19,7 +21,7 @@ function createTaskList() {
     const taskBtn = document.createElement('button');
     taskBtn.setAttribute('type', 'button');
     const delIcon = document.createElement('i');
-    delIcon.classList.add("fa-solid", "fa-trash-can");
+    delIcon.classList.add('fa-solid', 'fa-trash-can');
     const editIcon = document.createElement('i');
     editIcon.classList.add('fa-solid', 'fa-pen-to-square');
 
@@ -35,29 +37,27 @@ function createTaskList() {
 
     list.appendChild(task);
 
-    delIcon.addEventListener('click', ()=>{
-      console.log('delete');
+    delIcon.addEventListener('click', () => {
       removeTask(taskArr[i].index);
       createTaskList();
       storeTask();
       getTask();
     });
 
-    editIcon.addEventListener('click', ()=>{
+    editIcon.addEventListener('click', () => {
       taskContent.setAttribute('contentEditable', 'true');
       taskContent.focus();
-      taskContent.addEventListener('focusout', ()=>{
-        console.log(taskContent.textContent);
+      taskContent.addEventListener('focusout', () => {
         taskArr[i].description = taskContent.textContent;
         storeTask();
         getTask();
         createTaskList();
       });
-    }); 
-  };
-};
+    });
+  }
+}
 
-addBtn.addEventListener('click', ()=>{
+addBtn.addEventListener('click', () => {
   addTask();
   storeTask();
   getTask();
@@ -65,10 +65,9 @@ addBtn.addEventListener('click', ()=>{
 });
 
 listInput.addEventListener('keypress', (e) => {
-  if(e.keyCode === 13){
+  if (e.keyCode === 13) {
     addBtn.click();
   }
-  else return;
 });
 
 refresh.addEventListener('click', () => {
@@ -76,7 +75,7 @@ refresh.addEventListener('click', () => {
   createTaskList();
 });
 
-document.addEventListener("DOMContentLoaded", ()=> {
+document.addEventListener('DOMContentLoaded', () => {
   getTask();
   createTaskList();
 });
