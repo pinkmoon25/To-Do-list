@@ -9,7 +9,7 @@ const listInput = document.querySelector('#listInput');
 const addBtn = document.querySelector('.addtask');
 const refresh = document.querySelector('.refresh');
 
-export function createTaskList() {
+function createTaskList() {
   list.innerHTML = '';
   for (let i = 0; i < taskArr.length; i += 1) {
     taskArr[i].index = i;
@@ -54,17 +54,16 @@ export function createTaskList() {
         createTaskList();
       });
     });
-    
-    input.addEventListener('change', ()=>{
+
+    input.addEventListener('change', () => {
       update(i, input);
       storeTask();
       getTask();
-    })
-    if(taskArr[i].completed === true){
+    });
+    if (taskArr[i].completed === true) {
       input.checked = true;
       input.parentElement.parentElement.classList.add('completed');
-    }
-    else {
+    } else {
       input.checked = false;
       input.parentElement.parentElement.classList.remove('completed');
     }
@@ -90,7 +89,7 @@ refresh.addEventListener('click', () => {
   createTaskList();
 });
 
-clearBtn.addEventListener('click', ()=>{ 
+clearBtn.addEventListener('click', () => {
   clearCompleted();
   storeTask();
   getTask();

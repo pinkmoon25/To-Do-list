@@ -107,12 +107,12 @@ li {
 }
 
 .clear:hover {
-  transform: scale(0.98);
-  opacity: 0.6;
+  transform: scale(0.99);
+  opacity: 0.7;
 }
 
 button:hover {
-  background-color: line
+  transform: scale(1.2);
 }
 
 .completed {
