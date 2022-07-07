@@ -9,7 +9,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]( https://pinkmoon25.github.io/To-Do-list/)
 
 ## Authors
 
@@ -31,4 +31,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/PinkMoon25/To-Do-list/blob/main/MIT.md) licensed.
