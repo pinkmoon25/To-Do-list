@@ -62,6 +62,7 @@ addBtn.addEventListener('click', () => {
   storeTask();
   getTask();
   createTaskList();
+  listInput.value = '';
 });
 
 listInput.addEventListener('keypress', (e) => {
