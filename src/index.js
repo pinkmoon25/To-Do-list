@@ -2,8 +2,9 @@ import './style.css';
 import {
   taskArr, addTask, removeTask, storeTask, getTask,
 } from './task.js';
+import { clearBtn, update, clearCompleted } from './interaction.js';
 
-const list = document.querySelector('.task');
+const list = document.querySelector('.tasklist');
 const listInput = document.querySelector('#listInput');
 const addBtn = document.querySelector('.addtask');
 const refresh = document.querySelector('.refresh');
@@ -15,7 +16,6 @@ function createTaskList() {
     const task = document.createElement('li');
     const div = document.createElement('div');
     const taskContent = document.createElement('p');
-    taskContent.setAttribute('id', `${i}`);
     const input = document.createElement('input');
     input.setAttribute('type', 'checkbox');
     const taskBtn = document.createElement('button');
@@ -54,6 +54,19 @@ function createTaskList() {
         createTaskList();
       });
     });
+
+    input.addEventListener('change', () => {
+      update(i, input);
+      storeTask();
+      getTask();
+    });
+    if (taskArr[i].completed === true) {
+      input.checked = true;
+      input.parentElement.parentElement.classList.add('completed');
+    } else {
+      input.checked = false;
+      input.parentElement.parentElement.classList.remove('completed');
+    }
   }
 }
 
@@ -72,6 +85,13 @@ listInput.addEventListener('keypress', (e) => {
 });
 
 refresh.addEventListener('click', () => {
+  getTask();
+  createTaskList();
+});
+
+clearBtn.addEventListener('click', () => {
+  clearCompleted();
+  storeTask();
   getTask();
   createTaskList();
 });

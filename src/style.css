@@ -103,9 +103,24 @@ li {
   text-align: center;
   border: 1px solid rebeccapurple;
   font-size: 1em;
-  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.clear:hover {
+  transform: scale(0.99);
+  opacity: 0.7;
 }
 
 button:hover {
   transform: scale(1.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+  background: lightyellow;
+}
+
+.refresh:hover {
+  transform: rotate(360deg);
 }
