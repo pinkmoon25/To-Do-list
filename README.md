@@ -7,9 +7,9 @@
 - webpack
 - git & github
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link]( https://pinkmoon25.github.io/To-Do-list/)
+[To-Do list](https://pinkmoon25.github.io/To-Do-list/)
 
 ## Authors
 
