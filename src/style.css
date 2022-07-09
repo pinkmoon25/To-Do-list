@@ -6,11 +6,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: black;
 }
 
 main {
-  margin: 0 auto;
-  width: 55vw;
+  margin: 15px auto;
+  max-width: 65vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +26,7 @@ header {
   padding: 12px 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid rebeccapurple;
 }
 
@@ -53,7 +59,7 @@ input[name=listInput] {
 }
 
 .addtask {
-  margin-right: 8px;
+  margin: 0 8px;
   padding: 5px 8px;
   background-color: rebeccapurple;
   border-radius: 2px;
@@ -87,6 +93,7 @@ li > div {
 div > p {
   width: 100%;
   padding: 2px;
+  word-wrap: anywhere;
 }
 
 li {
@@ -117,10 +124,31 @@ button:hover {
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.7;
-  background: lightyellow;
+  opacity: 0.6;
+  background: cornflowerblue;
 }
 
 .refresh:hover {
   transform: rotate(360deg);
+}
+
+footer {
+padding: 8px 0;
+text-align: center;
+background: rebeccapurple;
+}
+
+a > i {
+  font-size: large;
+  transition: 0.3s ease;
+}
+
+a > i:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    max-width: 90vw;
+  }
 }
