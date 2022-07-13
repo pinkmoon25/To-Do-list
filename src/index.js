@@ -1,5 +1,7 @@
 import './style.css';
-import { taskArr, addTask, removeTask, storeTask, getTask } from './task.js';
+import {
+  taskArr, addTask, removeTask, storeTask, getTask,
+} from './task.js';
 import { clearBtn, update, clearCompleted } from './interaction.js';
 
 const list = document.querySelector('.tasklist');
