@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657725632564" clover="3.2.0">
-  <project timestamp="1657725632564" name="All files">
+<coverage generated="1657730486325" clover="3.2.0">
+  <project timestamp="1657730486326" name="All files">
     <metrics statements="9" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="5" coveredmethods="3" elements="18" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="task.js" path="C:\Users\Chinasa\Desktop\project\To-Do-list\src\task.js">
       <metrics statements="9" coveredstatements="7" conditionals="4" coveredconditionals="1" methods="5" coveredmethods="3"/>
