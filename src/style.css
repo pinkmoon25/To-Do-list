@@ -50,7 +50,7 @@ main > div {
   opacity: 0.7;
 }
 
-input[name=listInput] {
+input[name='listInput'] {
   width: 100%;
   padding: 5px 8px;
   border: none;
@@ -76,6 +76,11 @@ button > i {
   transition: all 0.3s ease;
 }
 
+a > i {
+  font-size: large;
+  transition: 0.3s ease;
+}
+
 button > i:hover {
   transform: scale(1.2);
 }
@@ -93,7 +98,7 @@ li > div {
 div > p {
   width: 100%;
   padding: 2px;
-  word-wrap: anywhere;
+  word-wrap: break-word;
 }
 
 li {
@@ -136,11 +141,6 @@ footer {
   padding: 8px 0;
   text-align: center;
   background: rebeccapurple;
-}
-
-a > i {
-  font-size: large;
-  transition: 0.3s ease;
 }
 
 a > i:hover {

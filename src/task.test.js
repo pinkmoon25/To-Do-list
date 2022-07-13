@@ -7,8 +7,8 @@ let taskArr = require('./task.js');
 
 describe('addTask', () => {
   test('add item', () => {
-    let body = document.querySelector('body');
-    let listInput = document.createElement('input');
+    const body = document.querySelector('body');
+    const listInput = document.createElement('input');
     listInput.id = 'listInput';
     body.appendChild(listInput);
     taskArr = [];

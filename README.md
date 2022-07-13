@@ -1,4 +1,5 @@
 # To-Do-list
+
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 
 ## Built With
@@ -7,7 +8,7 @@
 - webpack
 - git & github
 
-## Live Demo 
+## Live Demo
 
 [To-Do list](https://pinkmoon25.github.io/To-Do-list/)
 
@@ -18,6 +19,12 @@
 - GitHub: [@PinkMoon25](https://github.com/PinkMoon25/)
 - Twitter: [@twitterhandle](https://twitter.com/TusharS90674484)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tushar-singh-6b063a14b/)
+
+👤 **Nicholas Emmanuel**
+
+- GitHub: [@githubhandle](https://github.com/NickEmma)
+- Twitter: [@twitterhandle](https://twitter.com/techieEmma)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-emmanuel-6b9775207)
 
 ## 🤝 Contributing
 

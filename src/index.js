@@ -71,14 +71,13 @@ function createTaskList() {
 }
 
 addBtn.addEventListener('click', () => {
-  if(listInput.value === '') return;
-  else{
-    addTask();
-    storeTask();
-    getTask();
-    createTaskList();
-    listInput.value = '';
-  }
+  if (listInput.value === '') return;
+
+  addTask();
+  storeTask();
+  getTask();
+  createTaskList();
+  listInput.value = '';
 });
 
 listInput.addEventListener('keypress', (e) => {

@@ -1,4 +1,4 @@
-const listInput = document.querySelector('#listInput');
+const listInput = document.querySelector('#listInput'); //eslint-disable-line
 
 export let taskArr = []; //eslint-disable-line
 
