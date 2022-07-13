@@ -133,9 +133,9 @@ button:hover {
 }
 
 footer {
-padding: 8px 0;
-text-align: center;
-background: rebeccapurple;
+  padding: 8px 0;
+  text-align: center;
+  background: rebeccapurple;
 }
 
 a > i {
