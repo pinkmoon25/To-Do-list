@@ -15,12 +15,6 @@ export function update(x, input) {
 }
 
 export const clearCompleted = function () {
-  const arr = [];
-  taskArr.forEach((task) => {
-    if (task.completed === true) {
-      arr.push(task);
-    }
-  });
-  taskArr = taskArr.filter((task) => !arr.includes(task));
+  taskArr = taskArr.filter((task) => task.completed === false);
   return taskArr;
 };
