@@ -1,5 +1,3 @@
-const listInput = document.querySelector('#listInput'); // eslint-disable-line
-
 export let taskArr = []; //eslint-disable-line
 
 export function addTask(listInput, taskArr) {
@@ -20,7 +18,7 @@ export function removeTask(id, taskArr) {
   });
 }
 
-export function storeTask() {
+export function storeTask(taskArr) {
   localStorage.setItem('taskCollection', JSON.stringify(taskArr));
 }
 
