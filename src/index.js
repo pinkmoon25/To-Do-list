@@ -2,7 +2,9 @@ import './style.css';
 import {
   taskArr, addTask, removeTask, storeTask, getTask,
 } from './task.js';
-import { clearBtn, update, clearCompleted } from './interaction.js';
+import {
+  clearBtn, update, clearCompleted, edit,
+} from './interaction.js';
 
 const list = document.querySelector('.tasklist');
 const listInput = document.querySelector('#listInput');
@@ -40,24 +42,17 @@ function createTaskList() {
     delIcon.addEventListener('click', () => {
       removeTask(taskArr[i].index, taskArr);
       createTaskList();
-      storeTask();
+      storeTask(taskArr);
       getTask();
     });
 
     editIcon.addEventListener('click', () => {
-      taskContent.setAttribute('contentEditable', 'true');
-      taskContent.focus();
-      taskContent.addEventListener('focusout', () => {
-        taskArr[i].description = taskContent.textContent;
-        storeTask();
-        getTask();
-        createTaskList();
-      });
+      edit(taskContent, taskArr, i);
     });
 
     input.addEventListener('change', () => {
-      update(i, input);
-      storeTask();
+      update(i, input, taskArr);
+      storeTask(taskArr);
       getTask();
     });
     if (taskArr[i].completed === true) {
@@ -74,7 +69,7 @@ addBtn.addEventListener('click', () => {
   if (listInput.value === '') return;
 
   addTask(listInput, taskArr);
-  storeTask();
+  storeTask(taskArr);
   getTask();
   createTaskList();
   listInput.value = '';
@@ -92,8 +87,8 @@ refresh.addEventListener('click', () => {
 });
 
 clearBtn.addEventListener('click', () => {
-  clearCompleted();
-  storeTask();
+  const result = clearCompleted(taskArr);
+  storeTask(result);
   getTask();
   createTaskList();
 });

@@ -15,7 +15,7 @@ body {
 
 main {
   margin: 15px auto;
-  max-width: 65vw;
+  max-width: 75vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,17 +27,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rebeccapurple;
+  font-weight: 700;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background-color: #6495ed;
 }
 
 button {
+  font-size: 1em;
   border: none;
   background-color: inherit;
   transition: all 0.3s ease;
-}
-
-header > button {
-  padding: 5px 10px;
 }
 
 main > div {
@@ -46,16 +46,19 @@ main > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid rebeccapurple;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 input[name='listInput'] {
   width: 100%;
   padding: 5px 8px;
-  border: none;
-  background-color: transparent;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  color: #000;
+}
+
+input[type='checkbox'] {
+  width: 18px;
 }
 
 .addtask {
@@ -87,6 +90,9 @@ button > i:hover {
 
 ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 li > div {
@@ -99,6 +105,8 @@ div > p {
   width: 100%;
   padding: 2px;
   word-wrap: break-word;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 li {
@@ -106,15 +114,19 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rebeccapurple;
+  border-radius: 3px;
+  background: #639;
 }
 
 .clear {
   width: 100%;
-  padding: 12px 10px;
+  padding: 10px 0;
+  margin-top: 5px;
   text-align: center;
-  border: 1px solid rebeccapurple;
-  font-size: 1em;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #6495ed;
   transition: all 0.3s ease;
 }
 
@@ -129,8 +141,8 @@ button:hover {
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.6;
-  background: cornflowerblue;
+  opacity: 0.5;
+  background: rgb(35, 35, 36);
 }
 
 .refresh:hover {

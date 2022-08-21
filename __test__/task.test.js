@@ -2,8 +2,8 @@
  * @jest-environment jsdom
  */
 
-const { addTask, removeTask } = require('./src/task.js');
-let taskArr = require('./src/task.js');
+const { addTask, removeTask } = require('../src/task.js');
+let taskArr = require('../src/task.js');
 
 describe('addTask', () => {
   test('add item', () => {
